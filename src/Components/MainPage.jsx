@@ -15,30 +15,25 @@ export class MainPage extends React.Component {
 
     render() {
         return (
-            <div className="flexbox-container">
-                <div className="flexbox-item flexbox-item-1">
+            <div className="grid-container">
+                <div className="grid-item">
                     <h1>Bem vindo ao projeto Elo Group!</h1>
                     <div className="content">
-                        <div className="image">
+                        <div className="image border">
                             <a href="/">
-                                <img className="borda" src={Logo}/>
+                                <img src={Logo}/>
                             </a>
                         </div>
                     </div>
-                    <div className="footer">
-                    <a href="/cadastro">
-                            <button type="button" className="btn">Cadastro</button>
-                        </a>
-                    </div>
-                    <div className="footer">
-                        <a href="/login">
-                            <button type="button" className="btn">Login</button>
-                        </a>
-                    </div>
                 </div>
-                <div className="flexbox-item flexbox-item-2"></div>
-                <div className="flexbox-item flexbox-item-3"></div>
-                <div className="flexbox-item flexbox-item-4"></div>
+                    <div className="grid-item-btn">
+                        <a href="/cadastro">
+                            <button type="button" className="btn button-space">Cadastro</button>
+                        </a>
+                        <a href="/login">
+                            <button type="button" className="btn button-space">Login</button>
+                        </a>
+                    </div>
             </div>
         )
     }
