@@ -26,14 +26,14 @@ export class MainPage extends React.Component {
                         </div>
                     </div>
                 </div>
-                    <div className="grid-item-btn">
-                        <a href="/cadastro">
-                            <button type="button" className="btn button-space">Cadastro</button>
-                        </a>
-                        <a href="/login">
-                            <button type="button" className="btn button-space">Login</button>
-                        </a>
-                    </div>
+                <div className="grid-item-btn">
+                    <a href="/cadastro" className="width">
+                        <button type="button" className="btn button-space">Cadastro</button>
+                    </a>
+                    <a href="/login">
+                        <button type="button" className="btn button-space">Login</button>
+                    </a>
+                </div>
             </div>
         )
     }
